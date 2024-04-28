@@ -2,7 +2,7 @@ const SingleColumnCard = (props) => {
     return (
         <div>
             <div className="grid grid-col-1 gap-y-6 mr-6">
-                <a href="/c/tipe-produk/top-up-game?from=top-up-game-dope-section">
+                <a href="#">
                     <div className="mr-1 ml-1 mt-1 h-30 w-22">
                         <div className="cursor-pointer flex flex-col items-center [&>div>div.dope>img]:hover:scale-110 active:[&>div>div.dope>img]:scale-100 [&>div.dope-wrapper]:hover:shadow-lg [&>div.dope-wrapper]:hover:bg-gradient-to-br  [&>div.dope-wrapper]:hover:from-transparent [&>div.dope-wrapper]:hover:via-[#dddddd] [&>div.dope-wrapper]:hover:to-[#dddddd53] ">
                             <div className="dope-wrapper transition-all animate-none h-[72px] w-18 drop-shadow-sm">
@@ -30,7 +30,7 @@ const SingleColumnCard = (props) => {
                         </div>
                     </div>
                 </a>
-                <a href="/belanja-cepat/mobile-legends?category=26-diamond&denom=568-diamonds&&from=mobile-legends-dope-section">
+                <a href="#">
                     <div className="mr-1 ml-1 mt-1 h-30 w-22">
                         <div className="cursor-pointer flex flex-col items-center [&>div>div.dope>img]:hover:scale-110 active:[&>div>div.dope>img]:scale-100 [&>div.dope-wrapper]:hover:shadow-lg [&>div.dope-wrapper]:hover:bg-gradient-to-br  [&>div.dope-wrapper]:hover:from-transparent [&>div.dope-wrapper]:hover:via-[#dddddd] [&>div.dope-wrapper]:hover:to-[#dddddd53] ">
                             <div className="dope-wrapper transition-all animate-none h-[72px] w-18 drop-shadow-sm">
