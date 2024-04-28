@@ -1,35 +1,44 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+// import { useState } from 'react'
+import "./App.css";
+import Navbar from "./assets/components/Navbar/Navbar";
+import Card from "./assets/components/Product/Card";
 
 function App() {
-  const [count, setCount] = useState(0)
-
-  return (
-    <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1 className='bg-blue-600 font-serif items-center'>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+    return (
+        <>
+            <div>
+                <div className="bg-ghost-white">
+                    <div className="min-h-screen mx-auto bg-ghost-white px-32 max-w-1440px">
+                        <div className="__variable_f34e9f __variable_daef00 font-itemku">
+                            <div className="">
+                                <div className="fixed left-0 w-full top-0 z-50 bg-gradient-to-b from-[#CEDAF3] to-[#FBFCFE]/10 backdrop-blur-[2px] transition-all font-itemkuV2">
+                                    <div className="bg-cyan-blue-100 py-1 w-full">
+                                        <Navbar />
+                                    </div>
+                                    <div className="py-2 flex justify-center px-32 mx-auto max-w-1440px">
+                                        <div
+                                            style={{ width: 805, height: 24 }}
+                                        />
+                                    </div>
+                                </div>
+                                <div
+                                    className="w-full"
+                                    style={{ height: 120 }}
+                                ></div>
+                                <main>
+                                    <div className="block font-itemkuV2">
+                                        <div className="flex flex-col mt-4">
+                                            <Card />
+                                        </div>
+                                    </div>
+                                </main>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </>
+    );
 }
 
-export default App
+export default App;
