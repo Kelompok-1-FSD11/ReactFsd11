@@ -6,3 +6,15 @@ const CardProduct = (props) =>{
         </div>
     )
 }
+
+const Header = (props) =>{
+    const {gambar} = props;
+    return(
+        <a href="#">
+            <img src={gambar} alt="product" className="p-8 rounded-t-lg h-64 w-full " />
+        </a>
+    )
+}
+
+
+export default CardProduct;
