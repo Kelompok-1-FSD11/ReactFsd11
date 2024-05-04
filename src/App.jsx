@@ -1,5 +1,6 @@
 // import { useState } from 'react'
 import "./App.css";
+import BeliCepat from "./assets/components/FastBuy/BeliCepat";
 import Footer from "./assets/components/Footer/Footer";
 import Navbar from "./assets/components/Navbar/Navbar";
 import Card from "./assets/components/Product/Card";
@@ -29,6 +30,7 @@ function App() {
                                         <Card />
                                     </div>
                                 </div>
+                                <BeliCepat/>
                                 <Footer />
                             </main>
                         </div>
