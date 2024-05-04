@@ -117,7 +117,7 @@ const Container = () => {
     },
   ];
   return (
-    <div className="bg-white py-[150px] px-5 container">
+    <div className="bg-white py-[150px] px-5">
       <ContainerHeader />
       <div className="block lg:hidden">
         <ContainerDetail />
