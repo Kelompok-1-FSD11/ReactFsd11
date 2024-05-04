@@ -1,31 +1,19 @@
 import ListBeliCepat from '../api/belicepat';
 import { useState } from 'react';
-import ToggleShowItemsButton from './ToogleButton';
 
 const ShowProduct = () => {
 	const [clickedButton, setClickedButton] = useState(null);
 	const [selectedCategory, setSelectedCategory] = useState(ListBeliCepat[0]);
-	const [showItems, setShowItems] = useState(4);
-	const [isShowingAll, setIsShowingAll] = useState(false);
 
 	const handleButtonClickAndCategory = (category) => {
 		setClickedButton(category);
 		setSelectedCategory(category);
 	};
 
-	const toggleShowItems = () => {
-		if (!isShowingAll) {
-			setShowItems(10);
-		} else {
-			setShowItems(ListBeliCepat.length);
-		}
-		setIsShowingAll(!isShowingAll);
-	};
-
 	return (
 		<div>
 			<div className='min-w-fit'>
-				{ListBeliCepat.slice(0, showItems).map((category) => (
+				{ListBeliCepat.map((category) => (
 					<button
 						key={category.id}
 						onClick={() => handleButtonClickAndCategory(category)}
@@ -91,14 +79,6 @@ const ShowProduct = () => {
 							</div>
 						</div>
 					))}
-			</div>
-			<div className='flex justify-center mt-4'>
-				<ToggleShowItemsButton { 
-					showAll={isShowingAll}
-					onClick={toggleShowItems}
-
-				}
-				/>
 			</div>
 		</div>
 	);

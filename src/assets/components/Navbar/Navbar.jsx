@@ -1,11 +1,11 @@
 import React from "react";
 import TopNavbar from "./TopNavbar";
 import Logo from "./Logo";
-import Category from "./Button/Category";
+import Category from "./Button/Desktop/Category";
 import Search from "./Search";
-import Cart from "./Button/Cart";
-import SignUp from "./Button/SignUp";
-import Login from "./Button/Login";
+import Cart from "./Button/Desktop/Cart";
+import SignUp from "./Button/Desktop/SignUp";
+import Login from "./Button/Desktop/Login";
 
 function Navbar() {
     return (

@@ -1,9 +1,11 @@
 // import { useState } from 'react'
+import MediaQuery from "react-responsive";
 import "./App.css";
 import BeliCepat from "./assets/components/FastBuy/BeliCepat";
 import Footer from "./assets/components/Footer/Footer";
 import Navbar from "./assets/components/Navbar/Navbar";
 import Card from "./assets/components/Product/Card";
+import NavbarMobile from "./assets/components/Navbar/NavbarMobile";
 
 function App() {
     return (
@@ -14,7 +16,12 @@ function App() {
                         <div className="">
                             <div className="fixed left-0 w-full top-0 z-50 bg-gradient-to-b from-[#CEDAF3] to-[#FBFCFE]/10 backdrop-blur-[2px] transition-all font-itemkuV2">
                                 <div className="bg-cyan-blue-100 py-1 w-full">
-                                    <Navbar />
+                                    <MediaQuery maxWidth={1023}>
+                                        <NavbarMobile/>
+                                    </MediaQuery>
+                                    <MediaQuery minWidth={1024}>
+                                        <Navbar />
+                                    </MediaQuery>
                                 </div>
                                 <div className="py-2 flex justify-center px-32 mx-auto max-w-1440px">
                                     <div style={{ width: 805, height: 24 }} />
