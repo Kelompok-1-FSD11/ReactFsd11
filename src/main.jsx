@@ -1,7 +1,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import './index.css'
-import App from './App.jsx'
+import HomePage from './Pages/home.jsx'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 
 const router = createBrowserRouter([
@@ -10,6 +10,10 @@ const router = createBrowserRouter([
   element: <div>
               <p>Welcome</p>
           </div>,
+},
+{
+  path :"/home",
+  element: <div><HomePage/></div>,
 },
 {
   path :"/detail-product",
@@ -21,6 +25,6 @@ const router = createBrowserRouter([
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <App />
+     <RouterProvider router={router} />
   </React.StrictMode>,
 )

@@ -1,8 +1,17 @@
+import { Fragment } from "react";
+import HeadingContainer from "../Elements/Heading";
+import ContainerProduct from "./ContainerProduct";
+
 const CardProduct = (props) =>{
     const {children} = props;
     return(
-        <div className="w-full flex flex-col mx-2 my-2 justify-between max-w-sm bg-gray-800 border border-gray-600 rounded-lg shadow">
-            {children}
-        </div>
+        <Fragment>
+            <div className="mt-3 bg-slate-300">
+                {/* <HeadingContainer/> */}
+                <ContainerProduct/>
+            </div>
+        </Fragment>
     )
 }
+
+export default CardProduct;
