@@ -5,12 +5,12 @@ const ContainerProduct = () => {
     return(
         <Fragment>
             <div className="flex mt-6">
-                    <CrusorPointer/><p className="test-xm items-center justify-center leading-6 font-bold undefined">Top up Game</p>
-                    <CrusorPointer img="https://d1x91p7vw3vuq8.cloudfront.net/game_category/202396/dg5frlof3qo30u8st1gcs.svg"/><p className="test-xm items-center justify-center leading-6 font-bold undefined">Akun</p>
-                    <CrusorPointer img="https://d1x91p7vw3vuq8.cloudfront.net/game_category/202396/gwoqgq42u4rwxtprhe8oo.svg"/><p className="test-xm items-center justify-center leading-6 font-bold undefined">Voucher & Game Key</p>
-                    <CrusorPointer img="https://d1x91p7vw3vuq8.cloudfront.net/game_category/202396/6guieyhqvoi4zc0v9r84sc.svg"/><p className="test-xm items-center justify-center leading-6 font-bold undefined">Koin Game</p>
-                    <CrusorPointer img="https://d1x91p7vw3vuq8.cloudfront.net/game_category/202396/507fm72v5sn1th89seopsq.svg"/><p className="test-xm items-center justify-center leading-6 font-bold undefined">Item</p>
-            </div>
+                <CrusorPointer/>
+                <CrusorPointer img="https://d1x91p7vw3vuq8.cloudfront.net/game_category/202396/dg5frlof3qo30u8st1gcs.svg" title="akun"/>
+                <CrusorPointer img="https://d1x91p7vw3vuq8.cloudfront.net/game_category/202396/gwoqgq42u4rwxtprhe8oo.svg" title="Vhoucher & Game Key"/>
+                <CrusorPointer img="https://d1x91p7vw3vuq8.cloudfront.net/game_category/202396/6guieyhqvoi4zc0v9r84sc.svg" title="Koin Game"/>
+                <CrusorPointer img="https://d1x91p7vw3vuq8.cloudfront.net/game_category/202396/507fm72v5sn1th89seopsq.svg" title="Item"/>
+            </div> 
                 <div className="space-x-6 bg-cyan-100 border-cyan-200 rounded-b border-b border-r border-l">
                     <div className="w-full py-2">
                         <div className="undifined">

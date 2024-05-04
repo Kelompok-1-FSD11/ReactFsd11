@@ -6,8 +6,7 @@ const CardProduct = (props) =>{
     const {children} = props;
     return(
         <Fragment>
-            <div className="mt-3 bg-slate-300">
-                {/* <HeadingContainer/> */}
+            <div className="mt-3 bg-ghost-white">
                 <ContainerProduct/>
             </div>
         </Fragment>
