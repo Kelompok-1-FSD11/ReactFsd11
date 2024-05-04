@@ -22,10 +22,10 @@ const ExploreItem = (props) => {
             </div>
             <div className="flex gap-4 mb-6 flex-col-5">
                 <IsiExplore />
-                <IsiExplore img=""/>
-                <IsiExplore img=""/>
-                <IsiExplore img=""/>
-                <IsiExplore img=""/>
+                <IsiExplore />
+                <IsiExplore />
+                <IsiExplore />
+                <IsiExplore />
             </div>
         </Fragment>
     )
