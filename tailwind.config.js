@@ -8,6 +8,7 @@ export default {
   ],
   theme: {
      extend: {
+       
         colors: {
            main: {
               lightgrey: "rgb(234 242 252)",
@@ -23,6 +24,4 @@ export default {
         roboto: ["Roboto"],
         exo: ["Exo"]
      },
-  },
-  plugins: [],
 };
