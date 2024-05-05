@@ -1,10 +1,36 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import App from './App.jsx'
 import './index.css'
+import HomePage from './Pages/home'
+import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import Layout from './Pages/layout';
+import ContainerDetail from './components/module/container/container-detail';
+import Container from './components/module/container';
+
+const router = createBrowserRouter([
+{
+  path :"/",
+  element: <div>
+              <Layout/>
+          </div>,
+},
+{
+  path :"/1",
+  element: <div>
+              <Container/>
+          </div>,
+},
+{
+  path :"/rif",
+  element: <div>
+              <HomePage/>
+              <p>Detail Product</p>
+          </div>,
+}
+]);
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <App />
+    <RouterProvider router={router} />
   </React.StrictMode>,
 )
