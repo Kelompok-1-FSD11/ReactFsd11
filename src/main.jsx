@@ -15,7 +15,7 @@ const router = createBrowserRouter([
           </div>,
 },
 {
-  path :"/1",
+  path :"/detail-product",
   element: <div>
               <Container/>
           </div>,
@@ -23,7 +23,7 @@ const router = createBrowserRouter([
 {
   path :"/rif",
   element: <div>
-              <HomePage/>
+             / <HomePage/>
               <p>Detail Product</p>
           </div>,
 }
