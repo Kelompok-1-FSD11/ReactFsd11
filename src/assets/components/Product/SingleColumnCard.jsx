@@ -17,8 +17,6 @@ const SingleColumnCard = (props) => {
                                         alt={props.name1}
                                         width={72}
                                         height={72}
-                                        decoding="async"
-                                        data-nimg={1}
                                         srcSet={props.linkSet1}
                                         style={{ color: "transparent" }}
                                     />
@@ -45,8 +43,6 @@ const SingleColumnCard = (props) => {
                                         alt={props.name2}
                                         width={72}
                                         height={72}
-                                        decoding="async"
-                                        data-nimg={1}
                                         srcSet={props.linkSet2}
                                         style={{ color: "transparent" }}
                                     />
