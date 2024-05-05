@@ -1,23 +1,29 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import './index.css'
-import HomePage from './pages/home.jsx'
+import HomePage from './Pages/home'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import Layout from './Pages/layout';
+import ContainerDetail from './components/module/container/container-detail';
+import Container from './components/module/container';
 
 const router = createBrowserRouter([
 {
   path :"/",
   element: <div>
-              <p>Welcome</p>
+              <Layout/>
           </div>,
 },
 {
-  path :"/home",
-  element: <div><HomePage/></div>,
+  path :"/1",
+  element: <div>
+              <Container/>
+          </div>,
 },
 {
-  path :"/detail-product",
+  path :"/rif",
   element: <div>
+              <HomePage/>
               <p>Detail Product</p>
           </div>,
 }
