@@ -12,16 +12,16 @@ import CopyrightMobile from './Mobile/CopyrightMobile';
 const Footer = () => {
 	return (
 		<>
-            <MediaQuery maxWidth={1023}>
-                <Separator/>
-				<MobilePaymentMethod/>
-                <Separator/>
-                <Information/>
-                <Separator/>
-                <About/>
-                <Separator/>
-                <Social/>
-                <CopyrightMobile/>
+			<MediaQuery maxWidth={1023}>
+				<Separator />
+				<MobilePaymentMethod />
+				<Separator />
+				<Information />
+				<Separator />
+				<About />
+				<Separator />
+				<Social />
+				<CopyrightMobile />
 			</MediaQuery>
 			<MediaQuery minWidth={1024}>
 				<div className='w-full mt-20 space-y-10 font-itemkuV2'>
